@@ -1,0 +1,6 @@
+.winner-container {
+  text-align: center;
+  padding: 2rem;
+  border: 2px dashed #ccc;
+  margin: 2rem;
+}

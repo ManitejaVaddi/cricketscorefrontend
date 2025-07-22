@@ -1,0 +1,13 @@
+.match-summary-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.match-summary-card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}

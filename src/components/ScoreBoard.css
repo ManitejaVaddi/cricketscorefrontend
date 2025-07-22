@@ -1,0 +1,105 @@
+/* Container styles */
+.scoreboard-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+/* Headings */
+.scoreboard-container h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #222;
+}
+
+.scoreboard-container h3 {
+  font-size: 1.25rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.scoreboard-container p {
+  font-size: 1.1rem;
+  margin: 0.4rem 0;
+  text-align: center;
+}
+
+/* Buttons */
+.outcome-buttons {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.outcome-buttons button {
+  margin: 0.3rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: 2px solid #007bff;
+  background-color: #fff;
+  color: #007bff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.outcome-buttons button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Start 2nd Inning button */
+.inning-button {
+  display: block;
+  margin: 2rem auto 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.inning-button:hover {
+  background-color: #218838;
+}
+
+/* Recent Balls */
+.recent-balls {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.recent-balls h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.recent-balls span {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  background: #e0e0e0;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.match-summary {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+.match-summary p {
+  margin: 5px 0;
+}
