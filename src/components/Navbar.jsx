@@ -1,13 +1,13 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./navbar.css";
 
 const Navbar = ({ user, onLogout }) => {
-  const history = useHistory();
+  const navigate = useNavigate(); // ✅ Replaces useHistory()
 
   const handleLogout = () => {
     onLogout();
-    history.push("/login");
+    navigate("/login"); // ✅ Redirect to login after logout
   };
 
   return (
@@ -25,7 +25,7 @@ const Navbar = ({ user, onLogout }) => {
             <Link to="/toss">Toss</Link>
             <Link to="/scoreboard">Score</Link>
             <Link to="/winner">Winner</Link>
-            <Link to="/summaries">Match Summaries</Link> {/* New link */}
+            <Link to="/summaries">Match Summaries</Link>
           </>
         )}
       </div>
