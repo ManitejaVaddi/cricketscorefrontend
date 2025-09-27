@@ -26,9 +26,7 @@ const MatchSummary = () => {
       ) : (
         summaries.map((match, idx) => (
           <div className="match-summary-card" key={idx}>
-            <h3>
-              {match.teamA} vs {match.teamB}
-            </h3>
+            <h3>{match.teamA} vs {match.teamB}</h3>
             <p><strong>Date:</strong> {new Date(match.date).toLocaleDateString()}</p>
             <p><strong>Location:</strong> {match.location || "N/A"}</p>
             <p><strong>Toss Winner:</strong> {match.tossWinner}</p>
@@ -36,6 +34,40 @@ const MatchSummary = () => {
             <p><strong>{match.teamA} Score:</strong> {match.scoreA} ({match.oversA} overs)</p>
             <p><strong>{match.teamB} Score:</strong> {match.scoreB} ({match.oversB} overs)</p>
             <p><strong>🏆 Winner:</strong> {match.winner}</p>
+
+            {/* ✅ New detailed section */}
+            {match.innings?.map((inn, i) => (
+              <div key={i} className="innings-detail">
+                <h4>{inn.team} Innings</h4>
+                <p>
+                  Total: {inn.totalRuns}/{inn.wickets} in {inn.overs} overs
+                </p>
+                <table className="ball-table">
+                  <thead>
+                    <tr>
+                      <th>Over.Ball</th>
+                      <th>Batsman</th>
+                      <th>Bowler</th>
+                      <th>Runs</th>
+                      <th>Wicket</th>
+                      <th>Comment</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {inn.balls.map((b, j) => (
+                      <tr key={j}>
+                        <td>{b.over}.{b.ball}</td>
+                        <td>{b.batsman}</td>
+                        <td>{b.bowler}</td>
+                        <td>{b.runs}</td>
+                        <td>{b.wicket ? "Yes" : "-"}</td>
+                        <td>{b.comment || "-"}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ))}
           </div>
         ))
       )}

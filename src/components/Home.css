@@ -1,0 +1,50 @@
+.home-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f7f9fb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-container h1 {
+  color: #2b6777;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.user-profile {
+  margin-top: 30px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #d6d6d6;
+  text-align: left;
+}
+
+.user-profile h3 {
+  color: #52ab98;
+  margin-bottom: 15px;
+}
+
+.user-profile p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #333333;
+}
+
+.user-profile strong {
+  color: #2b6777;
+}
+
+.notice {
+  font-size: 1.1rem;
+  color: #555555;
+  margin-top: 20px;
+}
+
+.notice strong {
+  color: #2b6777;
+}
